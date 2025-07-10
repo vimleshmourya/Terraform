@@ -1,2 +1,2 @@
 variable "vnet-map" {}
-# variable "subnet-map" {}
+variable "subnet-map" {}
