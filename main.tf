@@ -6,6 +6,7 @@ module "vnet" {
   depends_on = [module.rg]
   source     = "./module/vnet"
   vnet-map   = var.vnet-map
+  subnet-map = var.subnet-map
 }
 
 module "vm" {

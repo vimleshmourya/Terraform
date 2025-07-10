@@ -27,6 +27,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   size                = each.value.size
   admin_username      = "adminuser"
   admin_password      = "Aszxjun@2025"
+  disable_password_authentication = false
   network_interface_ids = [azurerm_network_interface.nic[each.key].id,]
 
   os_disk {
